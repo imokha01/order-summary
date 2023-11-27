@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    width: inherit;
+    height: 30px;
+    border: 5px solid green;
+}
+
+#header img {
+    width: 25rem;
+    object-fit: contain;
+    border-radius: 20px 20px 0 0;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25rem;
+    height: 35rem;
+    /* border: 2px solid red; */
+}
+
+.summary   {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    width: 25rem;
+    height: 30rem;
+    margin-top: -10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.summary p {
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    color: hsl(224, 23%, 55%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 50px;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+.annualContainer {
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   gap: 10px;
+}
+
+.annual_plan {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: fit-content;
+
+}
+
+.annual_plan p {
+   margin: 5px; 
+}
+
+.summary button {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 20px 20px;
+    width: 20rem;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 5px 3px black;
+}
+
+.summary button:hover {
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+
+.summary button + a {
+    margin-top: 20px;
+}
+a:hover {
+    cursor: pointer;
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+
+@media screen and (max-width: 755px){
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    }
+    
+    main   {
+      padding: 0 15rem;
+    }   
+  
+}
+
